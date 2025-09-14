@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Vinicius de Camargo">
+    <meta name="description" content="Atividade 2 tema Privacidade e Segurança">
+    <meta name="keywords" content="Autenticção OAuth, JWT, Segurança contra XSS/CSRFSEO,
+      Importância, Principais Fatores,
+     Benefícios">
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Privacidade e Segurança</title>
+</head>
+
+<body>
+    <header class="header-1">
+        
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">Atividade 3</a>
+            </div>
+
+             <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#Introdução" class="nav-link active">
+                            Introdução</a></li>
+                    <li class="nav-item"><a href="#Autenticação OAth" class="nav-link">
+                            Autenticação OAth</a></li>
+                    <li class="nav-item"><a href="#JWT" class="nav-link">
+                            JWT</a></li>
+                    <li class="nav-item"><a href="#Segurança contra XSS/CSRF" class="nav-link">
+                            Segurança contra XSS/CSRF</a></li>
+                    <li class="nav-item"><a href="#Importância" class="nav-link">
+                            Importância</a></li>
+                    <li class="nav-item"><a href="#Conclusão" class="nav-link">
+                            Conclusão</a></li>
+                    <li class="nav-item"><a href="#Referências" class="nav-link">
+                            Referências</a></li>
+                </ul>
+            </div>
+         </nav>
+    </header>
+
+
+       <main>
+
+         <section class="home bd-grid" id="Introdução">
+            <div class="home-data">
+                <h1 class="home-title">Privacidade e Segurança </h1>
+            </div>
+
+        </section>
+
+         <section class="about section" id="about">
+            <h2 class="section-title">Introdução</h2>
+
+            <div class="about-container bd-grid">
+
+                <div>
+                    <p class="about-text">
+                        Privacidade e segurança são temas relacionados porem distintos, com diversos significados, entretanto no contexto digital. A privacidade refere-se ao direito dos usuários de controlarem suas informações pessoais e como e onde elas serão usadas, enquanto a segurança está ligada proteção de dados contra acesso não autorizado e uso indevido. Ambas são importantes para a proteção de dados sensíveis e para a confiança dos usuários em serviços digitais.
+                        <br>
+                        Sendo esses dois tópicos muito frequentes na sociedade atual com o constante avanço das tecnologias e com cada vez maior acesso a redes com um grande acesso e circulação de dados muito dele privados que são tratados como minas de ouro por hacker que podem roubar e vender informações pessoais para empresas, subornar pessoas ou usar tais dados para invadir contas privadas.
+                    </p>
+                    
+
+
+
+
+            </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Autenticação" id="Autenticação OAth">
+
+             <h2>Autenticação OAuth</h2>
+                    <p>
+                        OAuth (Open-Authorization) é um padrão de delegação de autenticação, ele normalmente é utilizado para permitir que os usuários da Internet possam fazer login em sites de terceiros usando contas de um provedor de identidade, como Google, Facebook, Microsoft, etc. Sem expor credenciais de autenticação, como senhas
+Sua história começou em novembro de 2006, quando Blaine Cook trabalhava na implementação de segurança para o Twitter com outros desenvolvedores, onde percebeu que não havia um padrão aberto para a delegação de acesso à APIs. Um grupo de discussão foi criado para o planejamento de um protocolo aberto. 
+<p>Em 4 de Dezembro de 2007, OAuth 1.0 foi lançado.</p>	
+<p>Em Outubro de 2012, OAuth 2.0 foi publicado.</p>
+
+                    </p>
+        </section>
+         <section class="JWT" id="JWT">
+
+             <h2>JWT (JSON Web Token)</h2>
+                    <p>
+JWT é um padrão aberto (RFC 7519) para transmitir informações confiáveis e seguras entre partes. Ele consiste em uma cadeia espessa e auto assinada de informações codificadas no formato JSON, que podem ser usadas para autenticação e autorização. JWT é comumente usados para autenticação de usuários em aplicativos web e mobile, mas também são usadas para comunicação entre sistemas.
+O JWT é um padrão aberto que pode ser usado em qualquer aplicativo que precisa transmitir informações entre as partes, independentemente de plataforma ou linguagem de programação.
+
+
+                    </p>
+        </section>
+
+ <section class="Segurança contra XSS/CSRF " id="Segurança contra XSS/CSRF">
+          
+             <h2>Segurança contra XSS/CSRF </h2>
+                    <p>
+                    O cross-site scripting (ou XSS) permite que um invasor execute JavaScript arbitrário no navegador de uma vítima.
+Falsificação de solicitação entre sites (ou CSRF) permite que um invasor induza uma vítima a executar ações não pretendidas.
+O CSRF geralmente se aplica apenas a um subconjunto de ações que um usuário consegue executar. Muitos aplicativos implementam defesas contra CSRF em geral, mas ignoram uma ou duas ações que ficam expostas. Por outro lado, uma exploração bem-sucedida de XSS normalmente pode induzir um usuário a executar qualquer ação que ele consiga executar, independentemente da funcionalidade em que a vulnerabilidade surge.
+O CSRF pode ser descrito como uma vulnerabilidade "unidirecional", na qual, embora um invasor possa induzir a vítima a emitir uma solicitação HTTP, ele não obtém a resposta dessa solicitação. Por outro lado, o XSS é "bidirecional", na qual o script injetado pelo invasor pode emitir solicitações e ler as respostas.
+
+                    </p>
+        </section>
+
+         <section class="Importância " id="Importância">
+          
+             <h2>Importância</h2>
+                    <p>
+                     As informações que você divulga online para acessar alguns serviços são muito confidenciais e extremamente valiosas como seu nome, data de nascimento, número de identidade e outras informações, você está entregando uma chave para sua identidade onde ao pessoas erradas obterem essas informações, poderão usá-las para roubar sua identidade, cometer fraudes contra você ou até mesmo prejudicá-lo fisicamente. 
+Empresas e governos obtêm controle significativo sobre a vida das pessoas acumulando informações consideráveis sobre elas por meio de esforços de coleta de dados.
+Com essas informações, podem influenciar nosso comportamento, direcionar publicidade para nós e até mesmo tomar decisões que afetem nossa capacidade de obter empregos, empréstimos ou outras oportunidades. Isso é mais preocupante quando você pensa que um grande número de pessoas tem pouquíssimo controle sobre seus dados coletados e sobre como eles são usados. Todos têm direito à privacidade e à capacidade de controlar as informações coletadas sobre eles. Sem a proteção adequada da privacidade das pessoas, corre-se o risco de abrir mão da autonomia e ficar vulnerável a constantes monitoramentos e manipulações.
+  
+                    </p>
+        </section>
+
+         <section class="Conclusão" id="Conclusão">
+          
+             <h2>Conclusão </h2>
+                    <p>
+  É possível concluir com base no texto acima a importância da Segurança e Privacidade pois além de importante elas são direitos do ser humano onde a violação deles podem causar danos significativos como perdas monetárias, danos morais e manipulações.
+	 A segurança é uma área com avanço constante afinal softwares maliciosos também passam por frequente avanço com cada vez mais protocolos e métodos de proteção como criptografia e o blockchain que ajuda na segurança e privacidades.
+A privacidade é algo que mudou muito após a explosão das redes sociais com uma grande massa de informações onde podem usar essas informações para diversos fins pois dificilmente algo postado na internet é completamente apagado.
+A segurança conta com diversos padrões abertos como o OAuth que permite acesso a aplicativos de terceiros por login em certos provedores exemplo Google evitando de ter que usar certas informações e o JWS que é um meio de transferência de informações seguras e confiáveis. 
+Ou seja uma das áreas mais importantes dos dias de hoje seja a Privacidade e a Segurança nesse mundo digital com a vida de bilhões de pessoas em risco de ataques em caso de falhas e ineficiências desses serviços.
+
+                    </p>
+        </section>
+
+    <section  class="Referências" id="Referências">
+                    <h2>Referências</h2>
+
+            <p>http://auth0.com/pt/intro-to-iam/what-is-oauth-2</p>
+            <p>https://www.dio.me/articles/jwt-o-que-e-como-funciona</p>
+            <p>https://portswigger.net/web-security/csrf/xss-vs-csrf</p>
+
+    </section>
+
+
+       </main>
