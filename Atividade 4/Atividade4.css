@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-box{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto;
+    grid-template-rows: 70px 150px 150px;
+
+    grid-template-areas:
+    'a a b '
+    'a a b '
+    'c c d '
+    'c c d '
+    'e e f '
+    'e e f '
+    'g g h '
+    'g g h '
+}
+
+.header-1{
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  top: 40;
+  border: black;
+  border-radius: 4%;
+  text-align: center;
+}
+
+.nav-logo {
+    color:black;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 40px;
+    float: center;
+
+    padding: 5px 0;
+}
+
+.box {
+    background-color: #898580;
+    border-radius: 5px;
+}
+
+.a {
+    grid-area: a;
+    text-align: left;
+    height: 300px;
+}
+
+.b {
+    grid-area: b;
+    text-align: center;
+    height: 300px;
+}
+
+.c {
+    grid-area: c;
+        text-align: left;
+    height: 300px;
+}
+.d {
+    grid-area: d;
+        text-align: center;
+    height: 300px;
+}
+.e {
+    grid-area: e;
+        text-align: left;
+    height: 300px;
+}
+.f {
+    grid-area: f;
+        text-align: center;
+    height: 300px;
+}
+.g {
+    grid-area: g;
+        text-align: left;
+    height: 300px;
+}
+
+.h {
+    grid-area: h;
+        text-align: center;
+    height: 300px;
+    
+}
