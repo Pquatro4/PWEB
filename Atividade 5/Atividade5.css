@@ -1,0 +1,55 @@
+div {
+  width: 500px;
+  height: 500px;
+  text-align: center;       
+  line-height: 500px;       
+  color: white;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+}
+ 
+@media (max-width: 420px) {
+  div { background-color: rgb(129, 126, 126); }
+  div h2::before { content: "Cinza"; }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+  div { background-color: rgb(203, 124, 40); }
+  div h2::before { content: "Laranja"; }
+}
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+  div { background-color: rgb(240, 51, 199); }
+  div h2::before { content: "Rosa"; }
+}
+ 
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+  div { background-color: rgb(204, 63, 63); }
+  div h2::before { content: "Vermelho"; }
+}
+ 
+@media (min-width: 1081px) and (max-width: 1366px) {
+  div { background-color: rgb(80, 11, 126); }
+  div h2::before { content: "Roxo"; }
+}
+ 
+/* De 1367px até 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  div { background-color: rgb(249, 213, 7); }
+  div h2::before { content: "Amarelo"; }
+}
+ 
+/* Maior que 1920px */
+@media (min-width: 1921px) {
+  div { background-color: rgb(5, 157, 5); }
+  div h2::before { content: "Verde"; }
+}
+ 
+/* Remove espaçamento padrão do h2 */
+h2 {
+  margin: 0;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
