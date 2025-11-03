@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retangulo</title>
+</head>
+<body>
+    <script>
+        class Retangulo {
+            constructor(largura, altura) {
+                this.largura = largura;
+                this.altura = altura;
+            }
+
+            area() {
+                return this.largura * this.altura;
+            }
+        }
+        alert("Calculando a área de um retângulo");
+        var largura = parseFloat(prompt("Digite a largura:"));  
+        var altura = parseFloat(prompt("Digite a altura:"));
+        var retangulo = new Retangulo(largura, altura); 
+
+        alert("A área do retângulo é: " + retangulo.area());
+
+
+
+        function Conta(NomCorr,Banco, NumConta,Saldo ){
+            this.NomCorr = NomCorr;
+            this.Banco = Banco; 
+            this.NumConta = NumConta;
+            this.Saldo = Saldo;
+        }
+      
+        
+        function ContaCorrente(salEspecial){
+            var salEspecial;
+            this.setSalEspecial = function(valor){
+                this.salEspecial = valor;
+            }
+        } 
+        function ContaPoupanca(juros, dataVenc){
+            var juros;
+            var dataVenc;
+            this.setJuros = function(valor){
+                this.Juros = valor;
+            }
+            this.getJuros = function(){
+                return this.Juros;
+        }
+            this.setDataVenc = function(valor){
+                this.dataVenc = valor;
+            }
+            this.getDataVenc = function(){
+                return this.dataVenc;
+            }
+    }
+    ContaCorrente.prototype = new Conta();
+    ContaPoupanca.prototype = new Conta();  
+    var conta1 = new ContaCorrente();
+    conta1.NomCorr = "Eduardo";  
+    conta1.Banco = "Banco do Brasil";
+    conta1.NumConta = "102938";
+    conta1.Saldo = 1512.00;
+    conta1.setSalEspecial(400.00);
+    alert("Nome do Correntista: " + conta1.NomCorr + 
+          "\nBanco: " + conta1.Banco + 
+          "\nNúmero da Conta: " + conta1.NumConta + 
+          "\nSaldo: " + conta1.Saldo + 
+          "\nSaldo Especial: " + conta1.salEspecial);
+    
+    var conta2 = new ContaPoupanca();
+    conta2.NomCorr = "Maria";
+    conta2.Banco = "Caixa Econômica";
+    conta2.NumConta = "912837";
+    conta2.Saldo = 3024.00;
+    conta2.setJuros(0.08);
+    conta2.setDataVenc("30/12/2025");   
+    alert("Nome do Correntista: " + conta2.NomCorr + 
+          "\nBanco: " + conta2.Banco + 
+          "\nNúmero da Conta: " + conta2.NumConta + 
+          "\nSaldo: " + conta2.Saldo + 
+          "\nJuros: " + conta2.getJuros() + 
+          "\nData de Vencimento: " + conta2.getDataVenc());
+
+  </script>
+</body>
+</html>
